@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d17">
+  <meta name="description" content="Một lá thư về những điều còn thương, và những giới hạn cần được tôn trọng.">
+
+  <title>HARU HARU — Một lá thư chưa gửi</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Be+Vietnam+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Lớp hiệu ứng phủ toàn màn hình -->
+  <div class="film-grain" aria-hidden="true"></div>
+  <div class="rain" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <!-- Thanh điều khiển -->
+  <header class="topbar">
+    <a href="#chapter-1" class="wordmark" id="home-link">
+      H/H <span>— a letter</span>
+    </a>
+
+    <div class="top-right">
+      <span class="chapter-count" id="chapter-count">01 / 04</span>
+
+      <button
+        class="sound-button"
+        id="sound-toggle"
+        type="button"
+        aria-pressed="false"
+        aria-label="Bật nhạc nền">
+        <span class="sound-icon" aria-hidden="true">♫</span>
+        <span id="sound-label">Bật nhạc</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="story">
+
+    <!-- CHƯƠNG 1: MỞ ĐẦU -->
+    <section
+      class="chapter chapter-hero is-active"
+      id="chapter-1"
+      data-chapter="1"
+      aria-labelledby="hero-title">
+
+      <div class="hero-copy">
+        <p class="eyebrow reveal">
+          A LETTER I NEVER KNEW HOW TO SEND
+        </p>
+
+        <h1 class="hero-title reveal" id="hero-title">
+          HARU<br><em>HARU</em>
+        </h1>
+
+        <p class="hero-subtitle reveal">
+          Có những điều chỉ có thể nói ra<br>
+          khi ta thôi cố giữ một người.
+        </p>
+
+        <div class="hero-meta reveal">
+          <span>GHI LẠI VÀO MỘT ĐÊM MƯA</span>
+          <span>•</span>
+          <span>01 — 04</span>
+        </div>
+      </div>
+
+      <!-- Thành phố đêm được tạo bằng CSS -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="moon"></div>
+        <div class="distant-city city-back"></div>
+        <div class="distant-city city-front"></div>
+        <div class="window-frame"></div>
+        <div class="reflection"></div>
+        <div class="silhouette"></div>
+        <span class="vertical-note">SOME GOODBYES ARE QUIET</span>
+      </div>
+
+      <button class="next-button hero-next" data-next="2" type="button">
+        <span>Đọc lá thư</span>
+        <span class="arrow" aria-hidden="true">↓</span>
+      </button>
+
+      <div class="side-index">MEMORIES / BOUNDARIES / GOODBYE</div>
+    </section>
+
+
+    <!-- CHƯƠNG 2: KÝ ỨC -->
+    <section
+      class="chapter chapter-memory"
+      id="chapter-2"
+      data-chapter="2"
+      aria-labelledby="memory-title"
+      aria-hidden="true">
+
+      <div class="chapter-heading">
+        <p class="eyebrow reveal">CHƯƠNG I · NHỮNG NGÀY ĐÃ QUA</p>
+
+        <h2 class="section-title reveal" id="memory-title">
+          Anh vẫn trân trọng<br>
+          <em>những ngày ấy.</em>
+        </h2>
+      </div>
+
+      <div class="memory-layout">
+        <div class="memory-photo reveal" role="img"
+             aria-label="Khung cửa sổ phủ mưa nhìn ra thành phố về đêm">
+          <div class="photo-light"></div>
+          <div class="photo-window"></div>
+          <span class="photo-caption">A MEMORY, NOT A PROMISE</span>
+        </div>
+
+        <div class="memory-text reveal">
+          <span class="quote-mark" aria-hidden="true">“</span>
+
+          <p>
+            Anh không muốn phủ nhận những gì chúng ta từng có.
+            Có những ngày rất bình thường, nhưng vì có em nên
+            chúng trở thành điều anh nhớ lâu hơn mình tưởng.
+          </p>
+
+          <p>
+            Anh biết ký ức không phải lời hứa. Những điều đẹp đẽ
+            đã xảy ra không có nghĩa là em phải ở lại, và tình
+            cảm anh dành cho em cũng không phải món nợ em cần trả.
+          </p>
+
+          <p class="small-note">
+            Anh chỉ mong những gì từng chân thành sẽ được nhớ
+            đến bằng sự tử tế.
+          </p>
+        </div>
+      </div>
+
+      <button class="next-button" data-next="3" type="button">
+        <span>Điều anh cần em hiểu</span>
+        <span class="arrow" aria-hidden="true">↓</span>
+      </button>
+
+      <div class="side-index">02 / THE MEMORIES</div>
+    </section>
+
+
+    <!-- CHƯƠNG 3: SỰ LỰA CHỌN -->
+    <section
+      class="chapter chapter-choice"
+      id="chapter-3"
+      data-chapter="3"
+      aria-labelledby="choice-title"
+      aria-hidden="true">
+
+      <div class="choice-backdrop" aria-hidden="true">
+        <span>DON'T KEEP ME</span>
+        <span>AS A MAYBE</span>
+      </div>
+
+      <div class="choice-content">
+        <p class="eyebrow reveal">CHƯƠNG II · SỰ LỰA CHỌN</p>
+
+        <h2 class="choice-title reveal" id="choice-title">
+          Nếu em đã mở lòng<br>
+          với một người khác,
+        </h2>
+
+        <p class="choice-lead reveal">
+          hãy cho người ấy một cơ hội thật lòng.
+        </p>
+
+        <div class="choice-rule reveal"></div>
+
+        <p class="choice-body reveal">
+          Và xin đừng giữ anh ở bên cạnh chỉ vì em biết anh
+          vẫn còn thương. Anh không muốn trở thành một nơi
+          để quay về mỗi khi em cô đơn, hay một lựa chọn dự
+          phòng trong lúc em chưa biết mình muốn gì.
+        </p>
+
+        <p class="choice-body reveal">
+          Anh không trách em vì đã thay đổi. Anh chỉ cần
+          sự rõ ràng, để trái tim mình không phải sống mãi
+          trong một lời hẹn chưa từng được nói ra.
+        </p>
+
+        <p class="choice-emphasis reveal">
+          Nếu em chọn người ấy, hãy chọn bằng cả lòng mình.<br>
+          Đừng nhận lấy tình cảm của anh chỉ vì anh vẫn ở đây.
+        </p>
+      </div>
+
+      <button class="next-button" data-next="4" type="button">
+        <span>Đến lời cuối</span>
+        <span class="arrow" aria-hidden="true">↓</span>
+      </button>
+
+      <div class="side-index">03 / THE CHOICE</div>
+    </section>
+
+
+    <!-- CHƯƠNG 4: LÁ THƯ CUỐI -->
+    <section
+      class="chapter chapter-letter"
+      id="chapter-4"
+      data-chapter="4"
+      aria-labelledby="letter-title"
+      aria-hidden="true">
+
+      <div class="letter-wrap">
+        <p class="eyebrow reveal">CHƯƠNG III · LÁ THƯ CUỐI</p>
+
+        <h2 class="section-title reveal" id="letter-title">
+          Gửi em,<br>
+          <em>người anh từng muốn đi cùng.</em>
+        </h2>
+
+        <article class="letter-body">
+          <p class="reveal">
+            Anh vẫn còn thương em. Anh sẽ không giả vờ rằng
+            chỉ cần một đêm là có thể quên hết những điều
+            mình từng hy vọng.
+          </p>
+
+          <p class="reveal">
+            Nhưng anh đang học cách hiểu rằng thương một người
+            không đồng nghĩa với việc phải luôn sẵn sàng, bất
+            kể người ấy chọn ai, rời đi bao lâu, hay quay về
+            vì lý do gì.
+          </p>
+
+          <p class="reveal">
+            Nếu một ngày em muốn tìm lại anh, anh mong đó là
+            vì em thực sự hiểu lòng mình và muốn chọn anh —
+            không phải vì em cần một nơi trú chân khi mọi thứ
+            ngoài kia không như ý.
+          </p>
+
+          <p class="reveal">
+            Còn nếu trái tim em đã thuộc về một nơi khác,
+            anh sẽ tôn trọng lựa chọn ấy. Anh sẽ giữ lại
+            những điều đẹp đẽ, rồi từ từ bước tiếp, dù có
+            thể sẽ mất một khoảng thời gian.
+          </p>
+
+          <p class="letter-final reveal">
+            Anh có thể vẫn thương em.<br>
+            <em>Nhưng anh không thể chờ em mãi.</em>
+          </p>
+
+          <p class="reveal">
+            Mong em bình yên với lựa chọn của mình. Và mong
+            anh cũng đủ can đảm để không bỏ quên bản thân
+            trong lúc chúc em hạnh phúc.
+          </p>
+
+          <p class="signature reveal">
+            — Một người đã từng hy vọng rất nhiều.
+          </p>
+        </article>
+      </div>
+
+      <div class="ending reveal">
+        <div class="ending-line"></div>
+
+        <p class="ending-title">SOME ENDINGS ARE QUIET.</p>
+
+        <p class="ending-subtitle">
+          Chúng vẫn có nghĩa là lời tạm biệt.
+        </p>
+
+        <button class="restart-button" id="restart" type="button">
+          Đọc lại từ đầu ↗
+        </button>
+      </div>
+
+      <div class="side-index">04 / LETTING GO</div>
+    </section>
+  </main>
+
+
+  <!-- Điều hướng nhanh giữa các chương -->
+  <nav class="chapter-nav" aria-label="Điều hướng các chương">
+    <button class="chapter-dot is-current" data-go="1"
+            type="button" aria-label="Đến chương 1"
+            aria-current="step"></button>
+
+    <button class="chapter-dot" data-go="2"
+            type="button" aria-label="Đến chương 2"></button>
+
+    <button class="chapter-dot" data-go="3"
+            type="button" aria-label="Đến chương 3"></button>
+
+    <button class="chapter-dot" data-go="4"
+            type="button" aria-label="Đến chương 4"></button>
+  </nav>
+
+
+  <!--
+    NHẠC NỀN:
+    Tải file MP3 của bạn vào thư mục assets.
+    Sau đó sửa đường dẫn bên dưới nếu cần.
+  -->
+  <audio id="background-music" preload="none" loop>
+    <source src="assets/love-is.mp3" type="audio/mpeg">
+    Trình duyệt của bạn không hỗ trợ phát âm thanh.
+  </audio>
+
+</body>
+</html>
